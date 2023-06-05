@@ -50,9 +50,14 @@ export class MainCategoryComponent implements OnInit {
     }
   }
 
-  onClickBread(): void {}
+  onClickBread(): void {
+    this.totalGlobal = this.clickValue;
+    this.clickValue ++
+  }
 
-  buyItem(): void {}
+  buyItem(itemId:number): void {
+
+  }
 
   addBreadPerSecondToTotal(): void {}
 
