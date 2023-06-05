@@ -1,4 +1,3 @@
-import { outputAst } from '@angular/compiler';
 import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -13,7 +12,7 @@ export class AppComponent implements OnInit {
   copyrightName:string;
 
   constructor() {
-    this.title = "Camille";
+    this.title = "Boulangerie de Camille";
     this.copyrightYear = 2023;
     this.copyrightName = "Camille Lesbaches";
   }

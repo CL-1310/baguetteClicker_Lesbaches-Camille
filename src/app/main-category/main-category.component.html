@@ -1,6 +1,10 @@
 <div class="center-items col-category">
-    <div class="space-category-details">
+    <div class="space-category-details" *ngFor="let category of descCategories">
+        <h3>{{category.name}}</h3>
+        <p>Nombre : {{category.total}}</p>
+        <p>Production : {{category.eachSecond}}</p>
     </div>
+
 </div>
 <div class="center-items centered-category">
     <h2 class="title-frame">
@@ -15,7 +19,11 @@
         </a>
     </div>
     <div class="center-items bonus-shop-frame">
+        
     </div>
 </div>
 <div class="center-items col-category">
+    <button *ngFor="let type of categories" [disabled]="type.inactive">
+        {{type.name}}
+    </button>
 </div>

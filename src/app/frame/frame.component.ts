@@ -12,11 +12,6 @@ export class FrameComponent implements OnInit {
   @Input() copyrightName: string = "";
 
   constructor() {
-    this.copyrightYear = this.copyrightYear;
-    this.copyrightName = this.copyrightName;
   }
-
-
-
   ngOnInit(): void {}
 }
