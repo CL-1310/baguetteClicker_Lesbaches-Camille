@@ -56,6 +56,23 @@ export class MainCategoryComponent implements OnInit {
   }
 
   buyItem(itemId:number): void {
+    itemId > 9;
+    let price = this.categories.find(category => category.id === itemId);
+    let discountedPrice = this.totalGlobal - itemId;
+    let finalPrice = Math.round(itemId * 0.075);
+    itemId ++;
+
+    let second = 0;
+    let eachSecond = this.descCategories.find(descCategories => descCategories.eachSecond === second);
+
+    let name = 'Clics'
+    let categoryName = this.descCategories.find(descCategories => descCategories.name === name);
+
+    // if(categoryName != this.categories.find(category => category.name === name)){
+    //   eachSecond = 5*Math.pow(2,itemId) * this.descCategories[itemId].total
+    // }
+
+    this.totalPerSecond = 5*Math.pow(2,itemId)
 
   }
 
